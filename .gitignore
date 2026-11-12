@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# 依赖与安装产物（本插件通过 link 安装，仓库里不需要 node_modules）
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# 日志与本地环境
+*.log
+.env
+.env.*
+!.env.example
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 测试与覆盖率
+coverage/
+.nyc_output/

@@ -1,0 +1,64 @@
+name: Bug 报告
+description: 学习台出现异常、报错或界面不符合预期
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量补齐下面的信息；涉及模型报错时，请把卡片上的完整错误文案贴进来。
+  - type: input
+    id: harness-version
+    attributes:
+      label: DeepSeek Harness 版本
+      placeholder: 例如 1.x.x（关于页面可查）
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: 学习台版本
+      placeholder: 例如 0.1.4（package.json 或插件详情页）
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 新建学习「xxx」
+        2. 划选「……」并提问
+        3. 出现……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果 / 报错
+      description: 有控制台报错或 Host 日志时请一并贴上。
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 截图、模型名称、是否重启过 Harness、是否刷新过页面等。
+    validations:
+      required: false

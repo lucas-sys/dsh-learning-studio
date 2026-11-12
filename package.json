@@ -1,0 +1,61 @@
+{
+  "name": "dsh-learning-studio",
+  "version": "0.1.4",
+  "private": true,
+  "description": "学习台：输入概念，先确认学习方面，再生成系统讲解；支持划线提问、回答成网、费曼复述自检，并导出 Markdown 笔记。",
+  "license": "MIT",
+  "author": "nanlin",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-sys/dsh-learning-studio.git"
+  },
+  "homepage": "https://github.com/lucas-sys/dsh-learning-studio#readme",
+  "bugs": {
+    "url": "https://github.com/lucas-sys/dsh-learning-studio/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "docs/*.svg",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "learning",
+    "study",
+    "feynman",
+    "knowledge-graph",
+    "markdown-notes"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

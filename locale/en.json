@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Learning Studio",
+    "description": "Name a concept, confirm the aspects you want with a structured template, and get a systematic framework; ask beside the text, link answers into a network, test yourself, and export Markdown notes."
+  },
+  "nav": "Learning Studio",
+  "title": "Learning Studio",
+  "subtitle": "Read a concept into a knowledge network of your own",
+  "read": "Read",
+  "graph": "Network",
+  "feynman": "Feynman test",
+  "notes": "Notes"
+}

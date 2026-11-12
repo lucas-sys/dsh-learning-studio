@@ -1,0 +1,6 @@
+# dsh-learning-studio bundle patch.
+# 安装后 loader 行 id 即 learning-studio；name 必须是包名，loader 才能解析到本包 host 半。
+- insert:
+    - id: learning-studio
+      name: 'dsh-learning-studio'
+      config: {}
